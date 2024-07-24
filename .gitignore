@@ -34,3 +34,10 @@
 /test/*
 
 settings.json
+
+# Ignore demo
+/app/views/demo_partials
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

@@ -1,0 +1,28 @@
+vi:
+  defaults:
+    sample_app: "SampleApp"
+    home: "Trang chu"
+    help: "Giup do"
+    log_in: "Dang nhap"
+    languages:
+      english: "Tieng Anh"
+      vietnamese: "Tieng Viet"
+  static_pages:
+    help:
+      content:
+        main: "Tim kiem giup do tai %{help_page}. De co giup do tai app nay, hay doc %{book_page}."
+        help_page: "Trang giup do Rails Tutorial"
+        book_page: "sach %{book_link}"
+        book_link: "Ruby on Rails Tutorial"
+    home:
+      content:
+        main: "Day la link %{link}"
+        link: "Ruby on Rails Tutorial"
+  layouts:
+    header:
+      nav:
+    footer:
+      credit: "Ruby on Rails Tutorial boi Michael Hart"
+      about: "Ve chung toi"
+      contact: "Lien he"
+      news: "Tin tuc moi"

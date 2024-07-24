@@ -1,0 +1,8 @@
+<% provide :title, t("defaults.help") %>
+<h1><%= t "defaults.sample_app" %></h1>
+<p>
+  <%= t(".content.main",
+          help_page: link_to(t(".content.help_page"), Settings.links.url.help_url).html_safe,
+          book_page: link_to((t(".content.book_link",
+                              book_link: "<em>#{t(".content.book_link")}</em>")).html_safe, Settings.links.url.main_url)).html_safe %>
+</p>
