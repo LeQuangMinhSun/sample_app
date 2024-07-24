@@ -1,0 +1,6 @@
+<% provide :title, t("defaults.home") %>
+<h1><%= t "defaults.sample_app" %></h1>
+<p>
+  <%= t(".content.main",
+          link: link_to(t(".content.link"), Settings.links.url.main_url)).html_safe %>
+</p>

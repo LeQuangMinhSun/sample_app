@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <%= t(".credit",
+          tutorial_title: link_to(t("defaults.tutorial_title"), Settings.links.url.main_url).html_safe,
+          author: link_to(t("defaults.author"), Settings.links.url.michael_hartl_url).html_safe).html_safe %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "#" %></li>
+      <li><%= link_to t(".contact"), "#" %></li>
+      <li><%= link_to t(".news"), "#" %></a></li>
+    </ul>
+  </nav>
+</footer>

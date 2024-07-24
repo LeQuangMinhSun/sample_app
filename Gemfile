@@ -3,7 +3,13 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 gem "bootsnap", require: false
 
+gem "bootstrap-sass", "3.4.1"
+
+gem "config"
+
 gem "importmap-rails"
+
+gem "i18n"
 
 gem "jbuilder"
 
@@ -13,7 +19,7 @@ gem "puma", "~> 5.0"
 
 gem "rails", "~> 7.0.5"
 
-gem "sprockets-rails"
+gem "sassc-rails"
 
 gem "stimulus-rails"
 
