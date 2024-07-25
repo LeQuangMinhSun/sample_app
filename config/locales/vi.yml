@@ -7,9 +7,41 @@ vi:
     home: "Trang chu"
     help: "Giup do"
     log_in: "Dang nhap"
+    sign_up: "Dang ky"
     languages:
       english: "Tieng Anh"
       vietnamese: "Tieng Viet"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: " khong duoc phep de trong"
+            email:
+              blank: " khong duoc phep de trong"
+              taken: " nay da duoc su dung"
+              invalid: " khong hop le"
+            password:
+              blank: " khong duoc de trong"
+            password_confirmation:
+              confirmation: "Mat khau xac nhan khong trung khop voi mat khau"
+              blank: "Mat khau xac nhan khong duoc de trong"
+    models:
+      user: "Nguoi dung"
+    attributes:
+      user:
+        name: "Ten"
+        email: "Email"
+        password: "Mat khau"
+  form:
+    confirmation: "Xac nhan mat khau"
+    create_my_account: "Tao tai khoan"
+  flash:
+    user:
+      not_found: "Khong tim thay nguoi dung!"
+    create_account:
+      success: "Tao tai khoan thanh cong"
   static_pages:
     help:
       content:
@@ -29,3 +61,6 @@ vi:
       about: "Ve chung toi"
       contact: "Lien he"
       news: "Tin tuc moi"
+  the_form_contain:
+    one: "Form co 1 loi"
+    other: "Form co %{count} loi"
