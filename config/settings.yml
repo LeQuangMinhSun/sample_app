@@ -1,0 +1,9 @@
+links:
+  home: "home"
+  help: "help"
+  login: "#"
+  url:
+    main_url: "http://www.railstutorial.org"
+    book_url: "http://www.railstutorial.org/book"
+    help_url: "http://www.railstutorial.org/help"
+    michael_hartl_url: "https://www.michaelhartl.com"
