@@ -1,66 +1,78 @@
 vi:
   defaults:
     sample_app: "SampleApp"
-    title: "App mau Ruby on Rails Tutorial"
+    title: "App mẫu Ruby on Rails Tutorial"
     tutorial_title: "Ruby on Rails Tutorial"
-    author: "Micheal Hartl"
-    home: "Trang chu"
-    help: "Giup do"
-    log_in: "Dang nhap"
-    sign_up: "Dang ky"
+    author: "Michael Hartl"
+    home: "Trang chủ"
+    help: "Giúp đỡ"
+    log_in: "Đăng nhập"
+    log_out: "Đăng xuất"
+    sign_up: "Đăng ký"
+    email: "Email"
+    password: "Mật khẩu"
+    users: "Người dùng"
     languages:
-      english: "Tieng Anh"
-      vietnamese: "Tieng Viet"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+  log_in:
+    new_user?: "Chưa có tài khoản?"
+    sign_up_now!: "Đăng ký ngay"
+    remember_me: "Ghi nhớ tài khoản"
   activerecord:
     errors:
       models:
         user:
           attributes:
             name:
-              blank: " khong duoc phep de trong"
+              blank: " không được phép để trống"
             email:
-              blank: " khong duoc phep de trong"
-              taken: " nay da duoc su dung"
-              invalid: " khong hop le"
+              blank: " không được phép để trống"
+              taken: " này đã được sử dụng"
+              invalid: " không hợp lệ"
             password:
-              blank: " khong duoc de trong"
+              blank: " không được để trống"
             password_confirmation:
-              confirmation: "Mat khau xac nhan khong trung khop voi mat khau"
-              blank: "Mat khau xac nhan khong duoc de trong"
+              confirmation: "Mật khẩu xác nhận không trùng khớp với mật khẩu"
+              blank: "Mật khẩu xác nhận không được để trống"
     models:
-      user: "Nguoi dung"
+      user: "Người dùng"
     attributes:
       user:
-        name: "Ten"
+        name: "Tên"
         email: "Email"
-        password: "Mat khau"
+        password: "Mật khẩu"
   form:
-    confirmation: "Xac nhan mat khau"
-    create_my_account: "Tao tai khoan"
+    confirmation: "Xác nhận mật khẩu"
+    create_my_account: "Tạo tài khoản"
+    save_changes: "Lưu thay đổi"
+    change_gravatar: "Thay đổi ảnh đại diện"
   flash:
+    log_in:
+      invalid_email_password_combination: "Sai email hoặc mật khẩu. Hãy thử lại"
     user:
-      not_found: "Khong tim thay nguoi dung!"
+      not_found: "Không tìm thấy người dùng!"
     create_account:
-      success: "Tao tai khoan thanh cong"
+      success: "Tạo tài khoản thành công"
   static_pages:
     help:
       content:
-        main: "Tim kiem giup do tai %{help_page}. De co giup do tai app nay, hay doc %{book_page}."
-        help_page: "Trang giup do Rails Tutorial"
-        book_page: "sach %{book_link}"
+        main: "Tìm kiếm giúp đỡ tại %{help_page}. Để có giúp đỡ tại app này, hãy đọc %{book_page}."
+        help_page: "Trang giúp đỡ Rails Tutorial"
+        book_page: "sách %{book_link}"
         book_link: "Ruby on Rails Tutorial"
     home:
       content:
-        main: "Day la link %{link}"
+        main: "Đây là link %{link}"
         link: "Ruby on Rails Tutorial"
   layouts:
     header:
       nav:
     footer:
-      credit: "%{tutorial_title} boi %{author}"
-      about: "Ve chung toi"
-      contact: "Lien he"
-      news: "Tin tuc moi"
+      credit: "%{tutorial_title} bởi %{author}"
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
+      news: "Tin tức mới"
   the_form_contain:
-    one: "Form co 1 loi"
-    other: "Form co %{count} loi"
+    one: "Form có 1 lỗi"
+    other: "Form có %{count} lỗi"
