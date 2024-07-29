@@ -7,10 +7,18 @@ en:
     home: "Home"
     help: "Help"
     log_in: "Log in"
+    log_out: "Log out"
     sign_up: "Sign up"
+    email: "Email"
+    password: "Password"
+    users: "Users"
     languages:
       english: "English"
       vietnamese: "Vietnamese"
+  log_in:
+    new_user?: "New around here?"
+    sign_up_now!: "Sign up now!"
+    remember_me: "Remember me"
   activerecord:
     models:
       user: "User"
@@ -23,6 +31,8 @@ en:
     confirmation: "Confirm password"
     create_my_account: "Create my account"
   flash:
+    log_in:
+      invalid_email_password_combination: "Invalid email or password. Please try again"
     user:
       not_found: "Not found user!"
     create_account:
