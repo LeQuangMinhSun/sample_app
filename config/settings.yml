@@ -7,8 +7,14 @@ links:
     book_url: "http://www.railstutorial.org/book"
     help_url: "http://www.railstutorial.org/help"
     michael_hartl_url: "https://www.michaelhartl.com"
+    gravatar_email_url: "http://gravatar.com/emails"
 name:
   max_length: 50
 email:
   max_length: 255
   valid_regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
+gravatar:
+  size: 80
+password:
+  min_length: 6
+page_10: 10

@@ -9,6 +9,8 @@ vi:
     log_in: "Đăng nhập"
     log_out: "Đăng xuất"
     sign_up: "Đăng ký"
+    delete: "Xóa người dùng"
+    edit_user: "Cập nhật"
     email: "Email"
     password: "Mật khẩu"
     users: "Người dùng"
@@ -42,6 +44,7 @@ vi:
         name: "Tên"
         email: "Email"
         password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
   form:
     confirmation: "Xác nhận mật khẩu"
     create_my_account: "Tạo tài khoản"
@@ -50,10 +53,17 @@ vi:
   flash:
     log_in:
       invalid_email_password_combination: "Sai email hoặc mật khẩu. Hãy thử lại"
-    user:
+    users:
       not_found: "Không tìm thấy người dùng!"
+      update:
+        success: "Cập nhật thông tin thành công!"
+      delete:
+        success: "Xóa người dùng thành công"
+        fail: "Xóa người dùng thất bại"
     create_account:
       success: "Tạo tài khoản thành công"
+    please_log_in: "Hãy đăng nhập trước!"
+    incorrect_user: "Bạn không thế cập nhật thông tin của tài khoản này!"
   static_pages:
     help:
       content:
@@ -68,11 +78,24 @@ vi:
   layouts:
     header:
       nav:
+        account: "Tài khoản"
+        profile: "Trang cá nhân"
+        settings: "Cài đặt"
     footer:
       credit: "%{tutorial_title} bởi %{author}"
       about: "Về chúng tôi"
       contact: "Liên hệ"
       news: "Tin tức mới"
+  users:
+    index:
+      title: "Danh sách người dùng"
+    edit:
+      update_profile: "Cập nhật thông tin"
+      save_button: "Lưu thông tin"
+    new:
+      sign_up_button: "Đăng ký"
+    delete:
+      confirm: "Bạn có chắc bạn muốn xóa người dùng này không?"
   the_form_contain:
     one: "Form có 1 lỗi"
     other: "Form có %{count} lỗi"

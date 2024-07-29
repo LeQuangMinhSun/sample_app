@@ -9,6 +9,10 @@ gem "bootstrap-sass", "3.4.1"
 
 gem "config"
 
+gem "faker"
+
+gem "pagy"
+
 gem "importmap-rails"
 
 gem "i18n"

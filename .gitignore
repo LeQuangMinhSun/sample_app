@@ -33,6 +33,9 @@
 /config/credentials.yml.enc
 /test/*
 
+/config/application.yml
+config/application.yml
+
 settings.json
 
 config/settings.local.yml
