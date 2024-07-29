@@ -17,4 +17,5 @@ gravatar:
   size: 80
 password:
   min_length: 6
+  reset_expired: 2
 page_10: 10

@@ -50,11 +50,13 @@ vi:
     create_my_account: "Tạo tài khoản"
     save_changes: "Lưu thay đổi"
     change_gravatar: "Thay đổi ảnh đại diện"
+    forgot_password: "Quên mật khẩu"
   flash:
     log_in:
       invalid_email_password_combination: "Sai email hoặc mật khẩu. Hãy thử lại"
     users:
       not_found: "Không tìm thấy người dùng!"
+      not_activated: "Tài khoản chưa được kích hoạt!"
       update:
         success: "Cập nhật thông tin thành công!"
       delete:
@@ -69,6 +71,15 @@ vi:
       success: "Kích hoạt tài khoản thành công!"
       fail: "Mã kích hoạt không hợp lệ!"
       not_activated: "Tài khoản chưa được kích hoạt. Vui lòng vào link kích hoạt đã được gửi đến mail của bạn."
+    password_resets:
+      success:
+        send_email: "Một email với hướng dẫn cài lại mặt khẩu đã được gửi cho bạn"
+        reset: "Đặt lại mật khẩu thành công"
+      fail:
+        send_email: "Không tìm thấy địa chỉ email này"
+        reset: "Đặt lại mật khẩu thất bại"
+      password_empty: "Trường mật khẩu trống!"
+      expired: "Đặt lại mật khẩu đã hết hạn"
   static_pages:
     help:
       content:
@@ -103,11 +114,25 @@ vi:
       confirm: "Bạn có chắc bạn muốn xóa người dùng này không?"
   mailer:
     account_activation: "Kích hoạt tài khoản"
+    password_reset: "Đặt lại mật khẩu"
   user_mailer:
     account_activation:
       greetings: "Xin chào %{name},"
       welcome: "Chào mừng đến với app mẫu! Bấm vào link dưới đây để kích hoạt tài khoản của bạn:"
       activate: "Kích hoạt"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      click_link: "Để đặt lại mật khẩu hãy bấm vào link bên dưới:"
+      reset_password: "Đặt lại mật khẩu"
+      expire: "Form sẽ hết hạn trong 2 tiếng nữa"
+      not_requested: "Nếu bạn không yêu cầu thay đổi mật khẩu, hãy bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      submit: "Gửi"
+    edit:
+      title: "Đổi mật khẩu"
+      submit: "Đổi mật khẩu"
   the_form_contain:
     one: "Form có 1 lỗi"
     other: "Form có %{count} lỗi"
