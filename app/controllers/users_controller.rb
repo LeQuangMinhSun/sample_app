@@ -24,8 +24,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t "flash.create_account.success"
-      redirect_to @user, status: :see_other
+      @user.send_activation_email
+      flash[:info] = t "flash.activation.check_email"
+      redirect_to root_url, status: :see_other
     else
       render :new, status: :unprocessable_entity
     end

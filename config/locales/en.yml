@@ -48,6 +48,11 @@ en:
       success: "User created successfully!"
     please_log_in: "Please log in first!"
     incorrect_user: "You cannot edit this account!"
+    activation:
+      check_email: "Please check your email to activate your account."
+      success: "Account activated!"
+      fail: "Invalid activation link"
+      not_activated: "Account not activated. Check your email for the activation link."
   static_pages:
     help:
       content:
@@ -80,6 +85,13 @@ en:
       sign_up_button: "Sign up"
     delete:
       confirm: "Are you sure you want to delete this user?"
+  mailer:
+    account_activation: "Account acvtivation"
+  user_mailer:
+    account_activation:
+      greetings: "Hi %{name},"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
   the_form_contain:
     one: "The form contains 1 error"
     other: "The form contain %{count} errors"

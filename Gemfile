@@ -11,7 +11,7 @@ gem "config"
 
 gem "faker"
 
-gem "pagy"
+gem "figaro"
 
 gem "importmap-rails"
 
@@ -20,6 +20,8 @@ gem "i18n"
 gem "jbuilder"
 
 gem "mysql2", "~> 0.5"
+
+gem "pagy"
 
 gem "puma", "~> 5.0"
 

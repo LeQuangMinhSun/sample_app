@@ -4,9 +4,13 @@ class SessionsController < ApplicationController
 
   def create
     if @user.authenticate params.dig(:session, :password)
-      success_login @user
+      if @user.activated?
+        success_login @user
+      else
+        account_not_activated
+      end
     else
-      fail_login
+      invalid_email_password
     end
   end
 
@@ -33,7 +37,12 @@ class SessionsController < ApplicationController
     redirect_to forwarding_url || user
   end
 
-  def fail_login
+  def account_not_activated
+    flash[:warning] = t "flash.activation.not_activated"
+    redirect_to root_url, status: :see_other
+  end
+
+  def invalid_email_password
     flash.now[:danger] = t "flash.log_in.invalid_email_password_combination"
     render :new, status: :unprocessable_entity
   end
