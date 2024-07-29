@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t "flash.create_account.success"
+      flash[:success] = t("flash.create_account.success")
       redirect_to @user, status: :see_other
     else
       render :new, status: :unprocessable_entity
