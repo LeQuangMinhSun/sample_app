@@ -7,9 +7,26 @@ en:
     home: "Home"
     help: "Help"
     log_in: "Log in"
+    sign_up: "Sign up"
     languages:
       english: "English"
       vietnamese: "Vietnamese"
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+  form:
+    confirmation: "Confirm password"
+    create_my_account: "Create my account"
+  flash:
+    user:
+      not_found: "Not found user!"
+    create_account:
+      success: "User created successfully"
   static_pages:
     help:
       content:
@@ -29,3 +46,6 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+  the_form_contain:
+    one: "The form contains 1 error"
+    other: "The form contain %{count} errors"
