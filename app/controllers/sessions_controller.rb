@@ -4,7 +4,12 @@ class SessionsController < ApplicationController
 
   def create
     if @user.authenticate params.dig(:session, :password)
-      success_login @user
+      if @user.activated?
+        success_login @user
+      else
+        flash[:warning] = t "flash.activation.not_activated"
+        redirect_to root_url, status: :see_other
+      end
     else
       fail_login
     end

@@ -11,6 +11,8 @@ gem "config"
 
 gem "faker"
 
+gem "figaro"
+
 gem "pagy"
 
 gem "importmap-rails"
