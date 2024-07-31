@@ -64,6 +64,11 @@ vi:
       success: "Tạo tài khoản thành công"
     please_log_in: "Hãy đăng nhập trước!"
     incorrect_user: "Bạn không thế cập nhật thông tin của tài khoản này!"
+    activation:
+      check_email: "Hãy vào email đã được gửi để kích hoạt tài khoản."
+      success: "Kích hoạt tài khoản thành công!"
+      fail: "Mã kích hoạt không hợp lệ!"
+      not_activated: "Tài khoản chưa được kích hoạt. Vui lòng vào link kích hoạt đã được gửi đến mail của bạn."
   static_pages:
     help:
       content:
@@ -96,6 +101,13 @@ vi:
       sign_up_button: "Đăng ký"
     delete:
       confirm: "Bạn có chắc bạn muốn xóa người dùng này không?"
+  mailer:
+    account_activation: "Kích hoạt tài khoản"
+  user_mailer:
+    account_activation:
+      greetings: "Xin chào %{name},"
+      welcome: "Chào mừng đến với app mẫu! Bấm vào link dưới đây để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
   the_form_contain:
     one: "Form có 1 lỗi"
     other: "Form có %{count} lỗi"

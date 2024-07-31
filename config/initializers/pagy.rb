@@ -1,1 +1,1 @@
-require 'pagy/extras/bootstrap' # <--- make sure this is here
+require "pagy/extras/bootstrap" # <--- make sure this is here
