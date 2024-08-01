@@ -31,15 +31,15 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
 
-  host = ENV["DEV.MAIL_HOST"]
+  host = ENV["MAIL_HOST"]
 
   config.action_mailer.default_url_options = { host: host}
 
   config.action_mailer.smtp_settings = {
-    :user_name => ENV["DEV.USER_NAME"],
-    :password => ENV["DEV.USER_PASSWORD"],
-    :address => ENV["DEV.MAIL_ADDRESS"],
-    :port => ENV["DEV.MAIL_PORT"],
+    :user_name => ENV["USER_NAME"],
+    :password => ENV["USER_PASSWORD"],
+    :address => ENV["MAIL_ADDRESS"],
+    :port => ENV["MAIL_PORT"],
     :authentication => :login,
     enable_starttls_auto: true
   }

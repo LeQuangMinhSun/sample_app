@@ -2,4 +2,4 @@
 
 <%= t ".welcome" %>
 
-<%= edit_account_activation_url(id: @user.activation_token, email:@user.email) %>
+<%= edit_account_activation_url(id: @user.activation_token, email:@user.email, locale: I18n.locale) %>
