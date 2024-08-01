@@ -37,6 +37,10 @@ vi:
             password_confirmation:
               confirmation: "Mật khẩu xác nhận không trùng khớp với mật khẩu"
               blank: "Mật khẩu xác nhận không được để trống"
+        micropost:
+          attributes:
+            content:
+              blank: " không được để trống"
     models:
       user: "Người dùng"
     attributes:
@@ -80,6 +84,14 @@ vi:
         reset: "Đặt lại mật khẩu thất bại"
       password_empty: "Trường mật khẩu trống!"
       expired: "Đặt lại mật khẩu đã hết hạn"
+    micropost:
+      invalid: "Bài viết không hợp lệ"
+      success:
+        create: "Tạo bài viết thành công"
+        destroy: "Xóa bài viết thành công"
+      fail:
+        create: "Tạo bài viết thất bại"
+        destroy: "Xóa bài viết thất bại"
   static_pages:
     help:
       content:
@@ -91,6 +103,7 @@ vi:
       content:
         main: "Đây là link %{link}"
         link: "Ruby on Rails Tutorial"
+      feed: "Feed bài đăng"
   layouts:
     header:
       nav:
@@ -112,6 +125,15 @@ vi:
       sign_up_button: "Đăng ký"
     delete:
       confirm: "Bạn có chắc bạn muốn xóa người dùng này không?"
+    show:
+      microposts: "Bài viết %{count}"
+  microposts:
+    invalid_image: "phải đúng định dạng ảnh"
+    invalid_size: "ảnh phải có kích cỡ bé hơn 5MB"
+    micropost:
+      posted_ago: "Đăng %{time} trước"
+      you_sure?: "Bạn chắc chắn muốn xóa bài viết này chứ?"
+      delete: "Xóa bài viết"
   mailer:
     account_activation: "Kích hoạt tài khoản"
     password_reset: "Đặt lại mật khẩu"
@@ -133,6 +155,18 @@ vi:
     edit:
       title: "Đổi mật khẩu"
       submit: "Đổi mật khẩu"
+  shared:
+    user_info:
+      view_profile: "Xem trang cá nhân của tôi"
+      micropost: "%{count} bài đăng"
+    micropost_form:
+      placeholder: "Viết bài viết mới..."
+      post_button: "Đăng"
   the_form_contain:
     one: "Form có 1 lỗi"
     other: "Form có %{count} lỗi"
+  datetime:
+    distance_in_words:
+      about_x_hours: "khoảng %{count} giờ"
+      less_than_x_minutes: "ít hơn %{count} phút trước"
+      x_minutes: "%{count} phút trước"

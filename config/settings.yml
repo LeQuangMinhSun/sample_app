@@ -19,3 +19,11 @@ password:
   min_length: 6
   reset_expired: 2
 page_10: 10
+digit_140: 140
+digit_50: 50
+valid_image_format: "image/jpeg,image/gif,image/png"
+image:
+  max_width: 500
+  max_height: 500
+  max_size: 5
+  type: ["image/jpeg", "image/gif", "image/png"]
