@@ -5,15 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy User.name_asc, items: Settings.page_10
+    @pagy, @users = pagy User.name_asc, limit: Settings.page_10
   end
 
   def show
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:warning] = t "flash.users.not_found"
-    redirect_to root_path
+    @page, @microposts = pagy @user.microposts, limit: Settings.page_10
   end
 
   def new
@@ -56,14 +52,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "flash.please_log_in"
-    redirect_to login_url
-  end
 
   def correct_user
     return if current_user?(@user)

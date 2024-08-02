@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
   USER_PARAMS = %i(name email password password_confirmation).freeze
   PASSWORD_PARAMS = %i(password password_confirmation).freeze
   VALID_EMAIL_REGEX = Regexp.new Settings.email.valid_regex
@@ -18,6 +20,10 @@ class User < ApplicationRecord
             allow_nil: true
 
   has_secure_password
+
+  def feed
+    microposts
+  end
 
   attr_accessor :remember_token, :activation_token, :reset_token
 

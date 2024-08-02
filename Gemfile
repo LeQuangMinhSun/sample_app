@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
+gem "active_storage_validations", "0.9.8"
+
 gem "bcrypt"
 
 gem "bootsnap", require: false
@@ -13,9 +15,13 @@ gem "faker"
 
 gem "figaro"
 
+gem "image_processing", "1.12.2"
+
 gem "importmap-rails"
 
 gem "i18n"
+
+gem "i18n-js"
 
 gem "jbuilder"
 

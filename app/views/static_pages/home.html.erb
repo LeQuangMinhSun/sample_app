@@ -1,6 +1,23 @@
 <% provide :title, t("defaults.home") %>
 <h1><%= t "defaults.sample_app" %></h1>
-<p>
-  <%= t(".content.main",
-          link: link_to(t(".content.link"), Settings.links.url.main_url)).html_safe %>
-</p>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <p>
+    <%= t(".content.main",
+            link: link_to(t(".content.link"), Settings.links.url.main_url)).html_safe %>
+  </p>
+<% end %>
