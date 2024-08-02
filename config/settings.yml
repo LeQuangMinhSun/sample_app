@@ -15,6 +15,7 @@ email:
   valid_regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
 gravatar:
   size: 80
+  size_30: 30
 password:
   min_length: 6
   reset_expired: 2

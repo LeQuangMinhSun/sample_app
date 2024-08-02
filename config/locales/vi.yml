@@ -92,6 +92,8 @@ vi:
       fail:
         create: "Tạo bài viết thất bại"
         destroy: "Xóa bài viết thất bại"
+    relationship:
+      not_found: "Không tìm thấy mối liên kết"
   static_pages:
     help:
       content:
@@ -127,6 +129,13 @@ vi:
       confirm: "Bạn có chắc bạn muốn xóa người dùng này không?"
     show:
       microposts: "Bài viết %{count}"
+    show_follow:
+      microposts: "Bài viết"
+      view_profile: "Xem trang cá nhân của tôi"
+    follow:
+      button: "Theo dõi"
+    unfollow:
+      button: "Hủy theo dõi"
   microposts:
     invalid_image: "phải đúng định dạng ảnh"
     invalid_size: "ảnh phải có kích cỡ bé hơn 5MB"
@@ -162,6 +171,15 @@ vi:
     micropost_form:
       placeholder: "Viết bài viết mới..."
       post_button: "Đăng"
+    stats:
+      following: "đang theo dõi"
+      follower: "người theo dõi"
+  following:
+    title: "Đang theo dõi"
+    count: "%{count} đang theo dõi"
+  follower:
+    title: "Người theo dõi"
+    count: "%{count} người theo dõi"
   the_form_contain:
     one: "Form có 1 lỗi"
     other: "Form có %{count} lỗi"

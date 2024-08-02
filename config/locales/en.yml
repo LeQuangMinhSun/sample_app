@@ -72,6 +72,8 @@ en:
       fail:
         create: "Created fail"
         destroy: "Deleted fail"
+    relationship:
+      not_found: "Relationship not found"
   static_pages:
     help:
       content:
@@ -107,6 +109,13 @@ en:
       confirm: "Are you sure you want to delete this user?"
     show:
       microposts: "Microposts %{count}"
+    show_follow:
+      microposts: "Microposts"
+      view_profile: "View my profile"
+    follow:
+      button: "Follow"
+    unfollow:
+      button: "Unfollow"
   microposts:
     invalid_image: "must be a valid image format"
     invalid_size: "should be less than 5MB"
@@ -151,6 +160,15 @@ en:
     micropost_form:
       placeholder: "Compose new micropost..."
       post_button: "Post"
+    stats:
+      following: "following"
+      follower: "followers"
+  following:
+    title: "Following"
+    count: "%{count} following"
+  follower:
+    title: "Followers"
+    count: "%{count} followers"
   the_form_contain:
     one: "The form contains 1 error"
     other: "The form contain %{count} errors"
