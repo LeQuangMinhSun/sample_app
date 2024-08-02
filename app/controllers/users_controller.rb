@@ -8,6 +8,18 @@ class UsersController < ApplicationController
     @pagy, @users = pagy User.name_asc, limit: Settings.page_10
   end
 
+  def following
+    @title = t "following.title"
+    @pagy, @users = pagy @user.following, limit: Settings.page_10
+    render :show_follow
+  end
+
+  def followers
+    @title = t "follower.title"
+    @pagy, @users = pagy @user.followers, limit: Settings.page_10
+    render :show_follow
+  end
+
   def show
     @page, @microposts = pagy @user.microposts, limit: Settings.page_10
   end
